@@ -26,8 +26,8 @@ export default function Home() {
   for (let i = 0; i < 12; i++) {
     cards.push(
       <Card key={i} className="w-[350px] h-[350px]">
-        <CardHeader>
-          <CardTitle className="text-lg">{data.data[i].market_name}</CardTitle>
+        <CardHeader className="pb-0">
+          <CardTitle className="text-lg h-[56px]">{data.data[i].market_name}</CardTitle>
           <CardDescription>${data.data[i].prices.safe.toFixed(2)}</CardDescription>
         </CardHeader>
         <CardContent>
